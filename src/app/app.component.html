@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="mt-2 mb-2 p-3 bg-dark text-white text-center h2">Les 24H du Code</div>
+
+    <h1>Chargez une Image</h1>
+    <div>
+        <label for="formFileLg" class="form-label">Chargez une Image</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file" (change)="getFile($event)">
+        <button class="btn btn-secondary ml-1" (click)="submitData()">Upload File</button>
+    </div>
+
+    <div id="actions">
+        <h4 class="mt-2">Actions</h4>
+        <div class="btn btn-primary">Classifier</div>
+        <div class="btn btn-success ml-1">Transformer</div>
+        <div class="btn btn-warning ml-1">Ajouter du style</div>
+    </div>
+
+    <div id="resultat-classification">
+        <p class="text-primary"></p>
+    </div>
+
+    <div id="resultat-transformation">
+        <p class="text-primary"></p>
+    </div>
+
+
+
+
+</div>
